@@ -1,0 +1,101 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: center;
+}
+
+.banner h1 span {
+  color: rgb(236 72 153);
+  font-weight: 700;
+}
+
+/* .banner-right img {
+  width: 35rem;
+} */
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 30vh; */
+  text-align: start;
+}
+
+.banner-left h1 {
+  font-size: 2.5rem;
+}
+
+.banner-left div p {
+  font-size: 1.3rem;
+  font-weight: 450;
+}
+
+/* banner button code start */
+
+.btn-pink {
+  background-color: #e83e8c;
+  color: #fff;
+  font-weight: 700;
+  border-color: #e83e8c;
+}
+
+.btn-pink:hover {
+  background-color: #d81b60;
+  color: #fff;
+  border-color: #d81b60;
+}
+
+.btn-pink:focus {
+  box-shadow: 0 0 0 0.2rem rgba(232, 62, 140, 0.5);
+}
+
+.btn-pink:active {
+  background-color: #d81b60;
+  color: #fff;
+
+  border-color: #d81b60;
+}
+/* banner button code close */
+
+@media screen and (max-width: 991px) {
+  .banner {
+    display: block;
+
+    text-align: center;
+    /* margin-top: 5rem; */
+  }
+  .banner-left h1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .banner-left div p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1330px) {
+  .banner-left h1 {
+    font-size: 3.5rem;
+  }
+  .banner {
+    margin-top: 5rem;
+  }
+}
+
+.banner-right img {
+  width: 75rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 1180px) {
+  .banner {
+    margin-top: 5rem;
+  }
+}

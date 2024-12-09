@@ -1,0 +1,132 @@
+.navbar-brand {
+  cursor: default !important;
+}
+.nav-sections {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-first-sections {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  font-size: 1.2rem;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .nav-first-sections {
+    display: flex;
+
+    /* justify-content: flex-start; */
+
+    font-size: 1.1rem;
+  }
+  .nav-sections {
+    display: flex;
+
+    justify-content: flex-start;
+  }
+}
+
+/* toggle switch code start */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.toggle-switch label:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + label {
+  background-color: black;
+}
+
+.toggle-switch input:checked + label:before {
+  transform: translateX(14px);
+}
+
+.toggle-switch {
+  /* margin-top: 0.4rem; */
+  text-align: center;
+  margin-top: 0.9rem;
+  margin-right: 1rem;
+  margin-left: 0.6rem;
+}
+
+@media screen and (max-width: 991px) {
+  .toggle-switch {
+    /* margin-top: 0.4rem; */
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0rem;
+  }
+}
+/* toggle switch code close */
+
+.login {
+  margin-left: 1.8rem;
+}
+@media screen and (max-width: 991px) {
+  .login {
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+}
+
+/* // search css start */
+.search-1 {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .search-1 {
+    display: block;
+  }
+}
+
+.search-2 {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .search-2 {
+    display: none;
+  }
+}
+/* // search css close */
