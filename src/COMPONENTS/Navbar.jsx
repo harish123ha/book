@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -42,13 +43,7 @@ function Navbar() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a
-                      className="nav-link text-5xl block "
-                      aria-current="page"
-                      href="/course"
-                    >
-                      Course
-                    </a>
+                    <Link to="/course">Course</Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link " aria-current="page" href="#">
