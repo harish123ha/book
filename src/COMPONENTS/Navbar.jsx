@@ -43,7 +43,9 @@ function Navbar() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <Link to="/course">Course</Link>
+                    <Link to="/course" className="nav-link" aria-current="page">
+                      Course
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link " aria-current="page" href="#">
